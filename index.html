@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Performance de Atletas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Performance de Atletas</h1>
+  </header>
+
+  <div class="container">
+    <div class="form">
+      <h2>Insira seus dados</h2>
+      <form id="performanceForm">
+        <div class="input-group">
+          <label for="peso">Peso (kg):</label>
+          <input type="number" id="peso" required>
+        </div>
+        <div class="input-group">
+          <label for="altura">Altura (cm):</label>
+          <input type="number" id="altura" required>
+        </div>
+        <div class="input-group">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" required>
+        </div>
+        <div class="input-group">
+          <label for="vo2max">VO2 Max (mL/kg/min):</label>
+          <input type="number" id="vo2max" required>
+        </div>
+        <button type="submit">Calcular</button>
+      </form>
+    </div>
+
+    <div class="results">
+      <h2>Resultados</h2>
+      <div class="result-item">
+        <h3>IMC</h3>
+        <p id="imc-result">--</p>
+      </div>
+      <div class="result-item">
+        <h3>Pace (tempo por km)</h3>
+        <p id="pace-result">--</p>
+      </div>
+      <canvas id="performanceChart"></canvas>
+    </div>
+  </div>
+
+  <footer>
+    <p>Compartilhe seus resultados nas redes sociais!</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://example.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?url=https://example.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
